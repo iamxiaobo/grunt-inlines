@@ -1,0 +1,17 @@
+{
+  "name": "grunt-inlines",
+  "version": "1.0.0",
+  "description": "inline static file to string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "tasks"
+  ],
+  "author": "suniaoo",
+  "license": "MIT",
+  "dependencies": {
+    "cssmin": "^0.4.3"
+  }
+}
