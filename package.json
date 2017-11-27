@@ -1,6 +1,6 @@
 {
   "name": "grunt-inlines",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "inline static file's content as string varibale",
   "main": "tasks/inlines.js",
   "scripts": {
