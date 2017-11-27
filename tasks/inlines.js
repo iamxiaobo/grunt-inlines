@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       var src = obj.src[0]
       var content = fs.readFileSync(src, { encoding: 'UTF-8'}) 
 
-      if (/styleCSS\s*:\s*__inline\(['"]([^'"]+)['"]\)/.test(content)) {
+      if (/__inline\(['"]([^'"]+)['"]\)/.test(content)) {
         var name = RegExp.$1 
         var filePath = path.join(path.dirname(src), name)
 
