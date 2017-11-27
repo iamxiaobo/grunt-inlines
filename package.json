@@ -1,7 +1,7 @@
 {
   "name": "grunt-inlines",
-  "version": "1.0.0",
-  "description": "inline static file to string",
+  "version": "1.0.3",
+  "description": "inline static file's content as string varibale",
   "main": "tasks/inlines.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,7 @@
   "dependencies": {
     "cssmin": "^0.4.3"
   },
-  "keyworkds": [
+  "keywords": [
     "grunt",
     "inline",
     "cssmin",
