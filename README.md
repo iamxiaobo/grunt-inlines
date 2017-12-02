@@ -10,7 +10,10 @@ In your Gruntfile.js, write like below:
 inlines: {
   options: {
     cssmin: true,
-    htmlmin: true
+    htmlmin: true,
+    htmlminOptions: {
+      // Please references https://www.npmjs.com/package/html-minifier#options-quick-reference  
+    }
   },
   files: {
     src: ...,

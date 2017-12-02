@@ -11,14 +11,14 @@ module.exports = function(grunt) {
     var cssminFlag = !!options.cssmin
     var htmlminFlag = !!options.htmlmin
 
-    var htmlminOptions = {
+    var htmlminOptions = Object.assign({
       collapseInlineTagWhitespace: true,
       collapseWhitespace: true,
       minifyCSS: true,
       minifyJS: true,
       removeComments: true,
       removeTagWhitespace: true
-    }
+    }, options.htmlminOptions)
 
     this.files.forEach(function(obj) {
       var src = obj.src[0]
