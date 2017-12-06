@@ -34,13 +34,13 @@ module.exports = function(grunt) {
         switch(fileType) {
           case "css":
             if (cssminFlag) {
-              fileContent = cssmin(fileContent)
+              fileContent = cssmin(fileContent).replace(/'/g, '"')
             }
             break
           
           case "html":
             if (htmlminFlag) {
-              fileContent = htmlmin(fileContent, htmlminOptions)
+              fileContent = htmlmin(fileContent, htmlminOptions).replace(/'/g, '"')
             }
             break
         }
